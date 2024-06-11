@@ -1,6 +1,8 @@
 import telebot
 from telebot import types
 
+TOKEN = "YOUR TOKEN"
+
 db = {}
 db_progress = {}
 
@@ -190,7 +192,7 @@ def points(id_user, point):  # Начисление point баллов поль�
 # points(1233421, 12)
 # print(result(1233421))
 
-bot = telebot.TeleBot('5486108452:AAFBk2jnPex1YSBhKpp63Gx7w3O8d6C25Iw', parse_mode=None)
+bot = telebot.TeleBot(TOKEN, parse_mode=None)
 
 
 @bot.message_handler(commands=['start'])  # создаем команду
